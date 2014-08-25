@@ -1,0 +1,21 @@
+{
+  "name": "node-messager",
+  "version": "0.0.0",
+  "description": "Server to handle push notifications to multiple services",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "gcm",
+    "apns",
+    "ios",
+    "android",
+    "push",
+    "notifications",
+    "push",
+    "messaging"
+  ],
+  "author": "Matt Merkes",
+  "license": "MIT"
+}
