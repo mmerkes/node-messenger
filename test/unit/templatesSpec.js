@@ -40,7 +40,7 @@ describe('UNIT templates.js', function () {
       };
       params = {
         message_id: 'asdf123'
-      }
+      };
 
       var message = compile(model, params);
       expect(message).to.deep.equal(expected);

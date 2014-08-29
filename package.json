@@ -17,5 +17,29 @@
     "messaging"
   ],
   "author": "Matt Merkes",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "chai": "^1.9.1",
+    "express": "^4.8.6",
+    "mongoose": "^3.8.15",
+    "request": "^2.40.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-env": "^0.4.1",
+    "grunt-mocha-istanbul": "^2.0.0",
+    "grunt-mocha-test": "^0.11.0",
+    "istanbul": "^0.3.0",
+    "mocha": "^1.21.4",
+    "proxyquire": "^1.0.1",
+    "sinon": "^1.10.3",
+    "supertest": "^0.13.0"
+  }
 }
