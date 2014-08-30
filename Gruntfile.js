@@ -52,14 +52,14 @@ module.exports = function(grunt) {
       }
     },
 
-    // mochaTest: {
-    //   test: {
-    //     options: {
-    //       reporter: 'spec'
-    //     },
-    //     src: ['test/**/*Spec.js']
-    //   }
-    // },
+    mochaTest: {
+      test: {
+        options: {
+          reporter: 'spec'
+        },
+        src: ['test/**/*Spec.js']
+      }
+    },
 
     watch: {
       files: ['<%= jshint.files %>'],
