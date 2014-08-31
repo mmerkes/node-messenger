@@ -11,14 +11,14 @@ module.exports = function(grunt) {
 
     env: {
       dev: {
-        NODE_ENV: grunt.option('env') || 'test',
+        NODE_ENV: grunt.option('env') || 'development',
         PORT: '3000'
       }
     },
 
     jshint: {
       // define the files to lint
-      files: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'lib/**/*.js', 'test/**/*.js', 'index.js', 'config.jshint'],
       // configure JSHint (documented at http://www.jshint.com/docs/)
       options: {
         "node": true,
@@ -44,9 +44,9 @@ module.exports = function(grunt) {
           reporter: 'spec',
           mask: '**/*Spec.js',
           check: {
-            statements: '80',
-            functions: '80',
-            lines: '80'
+            statements: '90',
+            functions: '85',
+            lines: '90'
           }
         }
       }

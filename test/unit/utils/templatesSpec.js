@@ -2,7 +2,7 @@
 
 var chai = require('chai'),
     expect = chai.expect,
-    templates = require('../../lib/templates');
+    templates = require('../../../lib/utils/templates');
 
 describe('UNIT templates.js', function () {
   describe('#compile()', function () {

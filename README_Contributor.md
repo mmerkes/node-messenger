@@ -47,3 +47,24 @@ Developers should be able to fire up a server, with a simple config file, and be
 8. Build web interface
 9. Allow for mass notifications
 10. Include a detailed list of error cases, what caused them, and how to fix them
+
+##Additional Conventions
+
+1. API responses should ALWAYS follow the below format:
+
+    // In case of error
+    {
+      status: 'error',
+      message: 'Error message here'
+    }
+
+    // In case of success
+    {
+      status: 'success',
+      data: {
+        key1: 'value',
+        key2: 'value'
+      }
+    }
+2. Basic validation should happen in the route to short-circuit API call ASAP
+3. All tests should be able to be run independently. i.e. Every test should allow the developer to add 'only' (it.only('some test')) and still pass.
