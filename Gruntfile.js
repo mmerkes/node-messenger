@@ -24,7 +24,7 @@ module.exports = function(grunt) {
         "node": true,
         "indent": 2,
         "globalstrict": true,
-        //"expr": true,
+        "expr": true,
         "globals": {
           /* CHAI */
           "describe": false,
@@ -44,9 +44,9 @@ module.exports = function(grunt) {
           reporter: 'spec',
           mask: '**/*Spec.js',
           check: {
-            statements: '90',
-            functions: '85',
-            lines: '90'
+            statements: '95',
+            functions: '95',
+            lines: '95'
           }
         }
       }
