@@ -3,7 +3,7 @@
 module.exports = {
   mongo: {
     development: "mongodb://127.0.0.1:27017/messenger",
-    test: "mongodb://tester:messenger@kahana.mongohq.com:10050/node_messenger"
+    test: process.env.MONGO_URL
   },
   port: {
     development: '3000',
