@@ -60,5 +60,20 @@ describe('UNIT templates.js', function () {
       var message = compile(model, params);
       expect(message).to.deep.equal(expected);
     });
+
+    it('should escape double quotes to it won\'t error while parsing', function () {
+      expected = { 
+        message: 'You received a new message from "The Boss" Stephen A.',
+        link: 'messages/asdf123' 
+      };
+      params = {
+        sender: '"The Boss" Stephen A.',
+        message_id: 'asdf123',
+        recipient: 'Paul B.'
+      };
+
+      var message = compile(model, params);
+      expect(message).to.deep.equal(expected);
+    });
   });
 });
