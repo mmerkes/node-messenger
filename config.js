@@ -15,7 +15,8 @@ module.exports = {
     blackberry: false,
     ios: true,
     windows: false
-  }
+  },
+  api_key: 'key-1d1xsrzasftcnf6-opq7aii6jqk2onr8'
 };
 
 module.exports.get = function (key) {
